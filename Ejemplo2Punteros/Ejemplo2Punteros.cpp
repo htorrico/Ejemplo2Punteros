@@ -49,9 +49,38 @@ void SegundoEjemplo()
 
     cout << result2 << endl;
     cout << resultResta << endl;
+
+
+
+
 }
 int main()
 {
+    /*int* Notas;
+    Notas = new int[cantidad];*/
+
+
+    int cantidad = 0;
+    cout << "Ingrese Cantidad"<<endl;
+    cin >> cantidad;
+
+    int* Pares;
+    Pares = new int[cantidad];
+    
+    //Asignando valores al arreglo
+    for (int i = 0; i < cantidad; i++)
+    {
+        Pares[i] = i * 2;
+    }
+
+    //Mostrando valores del arreglo
+    for (int i = 0; i < cantidad; i++)
+    {
+        cout << Pares[i] << endl;
+    }
+
+
+
 
     cout << "Hello World!\n";
 }
